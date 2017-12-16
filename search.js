@@ -2,13 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	var button = document.getElementById('enter');
 
 	button.addEventListener('click', function(){
-		var searchTerm = document.getElementById("search");
+		var searchTerm = document.getElementById("search").toString();
 		var stringURL = "http://www.reddit.com/r/";
-		document.write(stringURL);
 
-		stringURL.append(searchTerm);
+		stringURL = stringURL.concat(searchTerm);
 		chrome.tabs.create({
-    	 	'url': stringURL;
+    	 	'url': stringURL,
+    	 	'selected': true
 		});
 	})
 })
