@@ -3,7 +3,7 @@
 
 	"name": "Instant Subreddit",
 	"description": "Instantly open to any subreddit",
-	"version": "0.5",
+	"version": "1.0",
 
 	"browser_action":{
 		"default_popup": "search.html"
