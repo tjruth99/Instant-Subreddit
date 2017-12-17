@@ -3,9 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	button.addEventListener('click', function(){
 
-		var inputBox = document.getElementById('search');
+		var subreddit = document.getElementById('search').value;
 		var stringURL = "http://www.reddit.com/r/";
-		var subreddit = inputBox.value;
 
 		stringURL = stringURL.concat(subreddit);
 
